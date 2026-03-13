@@ -86,7 +86,7 @@ export const generateVideo = async (
       }
 
       operation = await ai.models.generateVideos({
-        model: currentModel, // Áp dụng model từ danh sách fallback
+        model: 'veo-2.0-generate-001', // LƯU Ý: API Video bắt buộc dùng model Veo, không thể dùng trực tiếp họ "gemini-"
         prompt: prompt,
         image: imagePayload,
         config: {
